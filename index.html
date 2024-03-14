@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar AJAX | Gamelab Indonesia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter country name"
+      />
+      <button type="button">Covid Statistics</button>
+
+      <div class="card-statistik">
+        <h4 class="font-bold statistik-title">Covid Statistics</h4>
+        <h6 class="font-medium statistik-subtitle">
+          Country :
+          <span class="nama-negara">Indonesia</span>
+        </h6>
+
+        <div class="flex-container">
+          <div class="mb-3">
+            <p class="data-title">Active Case</p>
+            <p class="data-value active-case"></p>
+          </div>
+
+          <div class="mb-3">
+            <p class="data-title">Critical Case</p>
+            <p class="data-value critical-case"></p>
+          </div>
+
+          <div>
+            <p class="data-title">New Case</p>
+            <p class="data-value new-case"></p>
+          </div>
+
+          <div>
+            <p class="data-title">Recovered</p>
+            <p class="data-value recovered"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Script Vanilla JS -->
+    <script src="assets/js/script.js"></script>
+    <!-- Script Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
